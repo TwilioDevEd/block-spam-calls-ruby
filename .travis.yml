@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - rvm 2.3.4
+  - rvm 2.4.0
+
+install:
+  - bundle
