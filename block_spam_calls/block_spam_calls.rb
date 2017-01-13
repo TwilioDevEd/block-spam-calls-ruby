@@ -10,8 +10,8 @@ post '/' do
         add_ons = JSON.parse(params['AddOns'])
         if add_ons['status'] == 'successful'
             block_call = (
-                marchex_blocked?(add_ons['results']['marchex_cleancall']) or
-                nomorobo_blocked?(add_ons['results']['nomorobo_spamscore']) or
+                marchex_blocked?(add_ons['results']['marchex_cleancall']) ||
+                nomorobo_blocked?(add_ons['results']['nomorobo_spamscore']) ||
                 whitepages_blocked?(add_ons['results']['whitepages_pro_phone_rep'])
             )
         end
