@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
+
+gem 'rake'
 gem 'sinatra'
 gem 'twilio-ruby'
-gem 'rack-test'
-gem 'rake'
-gem 'test-unit'
+
+group :test do
+  gem 'minitest'
+  gem 'test-unit'
+  gem 'rack-test'
+end
