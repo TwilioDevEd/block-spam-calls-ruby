@@ -1,4 +1,4 @@
-require_relative './block_spam_calls'
+require_relative '../app'
 require 'test/unit'
 require 'rack/test'
 
