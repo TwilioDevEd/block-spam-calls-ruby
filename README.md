@@ -16,8 +16,7 @@ To run the app locally, clone this repository and `cd` into its directory:
 
 1. First clone this repository and `cd` into its directory:
    ```
-   git clone git@github.com:TwilioDevEd/block-spam-calls-ruby.git
-
+   git clone https://github.com/TwilioDevEd/block-spam-calls-ruby.git
    cd block-spam-calls-ruby
    ```
 
