@@ -6,7 +6,7 @@
 [![Build
 Status](https://travis-ci.org/TwilioDevEd/block-spam-calls-ruby.svg?branch=master)](https://travis-ci.org/TwilioDevEd/block-spam-calls-ruby)
 
-Learn how to use Twilio add-ons to block spam calls.
+[Learn how to use Twilio add-ons to block spam calls](https://www.twilio.com/docs/guides/block-spam-calls-and-robocalls-ruby).
 
 ## Local development
 
