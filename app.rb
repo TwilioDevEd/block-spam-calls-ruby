@@ -16,16 +16,15 @@ post '/' do
     end
   end
 
-  response = Twilio::TwiML::Response.new do |r|
-    if block_call
-      r.Reject
-    else
-      r.Say 'Welcome to the jungle'
-      r.Hangup
-    end
+  response = Twilio::TwiML::VoiceResponse.new
+  if block_call
+    response.reject
+  else
+    response.say 'Welcome to the jungle'
+    response.hangup
   end
 
-  response.to_xml
+  response.to_xml_str
 end
 
 def marchex_blocked?(marchex)
