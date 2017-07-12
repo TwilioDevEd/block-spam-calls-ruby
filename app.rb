@@ -24,7 +24,7 @@ post '/' do
     response.hangup
   end
 
-  response.to_xml_str
+  response.to_s
 end
 
 def marchex_blocked?(marchex)
