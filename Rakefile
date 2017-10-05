@@ -1,10 +1,7 @@
-# Rakefile
 require 'rake'
 require 'rake/testtask'
+require 'rspec/core/rake_task'
 
-Rake::TestTask.new do |t|
-  t.pattern = "tests/*_test.rb"
-  t.warning = false
-end
+RSpec::Core::RakeTask.new(:spec)
 
-task default: :test
+task default: :spec
