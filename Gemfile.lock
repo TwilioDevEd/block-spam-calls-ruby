@@ -11,7 +11,7 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
-    rack (1.6.5)
+    rack (1.6.11)
     rack-protection (1.5.3)
       rack
     rack-test (0.7.0)
