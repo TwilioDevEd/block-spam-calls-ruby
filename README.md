@@ -5,6 +5,8 @@
 # Block Spam Calls. Powered by Twilio - Ruby/Sinatra
 [![Build Status](https://travis-ci.org/TwilioDevEd/block-spam-calls-ruby.svg?branch=master)](https://travis-ci.org/TwilioDevEd/block-spam-calls-ruby)
 
+> We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
+
 [Learn how to use Twilio add-ons to block spam calls](https://www.twilio.com/docs/guides/block-spam-calls-and-robocalls-ruby).
 
 ## Local development
