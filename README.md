@@ -12,7 +12,7 @@
 
 ## Local development
 
-First you need to have [Ruby](https://www.ruby-lang.org/) (at least v2.3) installed on your system.
+First you need to have [Ruby](https://www.ruby-lang.org/) (v2.6.3) installed on your system.
 
 To run the app locally, clone this repository and `cd` into its directory:
 
