@@ -12,7 +12,7 @@ post '/' do
       if add_ons.call_blocked?
         r.reject
       else
-        r.say('Welcome to the jungle')
+        r.say(message: 'Welcome to the jungle')
         r.hangup
       end
     end.to_s

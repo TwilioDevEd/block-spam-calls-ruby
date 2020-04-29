@@ -3,7 +3,8 @@
 </a>
 
 # Block Spam Calls. Powered by Twilio - Ruby/Sinatra
-[![Build Status](https://travis-ci.org/TwilioDevEd/block-spam-calls-ruby.svg?branch=master)](https://travis-ci.org/TwilioDevEd/block-spam-calls-ruby)
+
+![](https://github.com/TwilioDevEd/block-spam-calls-ruby/workflows/Ruby/badge.svg)
 
 > We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
 
@@ -62,5 +63,6 @@ bundle exec rspec
 ## Meta
 
 * No warranty expressed or implied. Software is as is. Diggity.
+* The CodeExchange repository can be found [here](https://github.com/twilio-labs/code-exchange/).
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Lovingly crafted by Twilio Developer Education.
