@@ -38,27 +38,27 @@ describe 'Application' do
       end
     end
 
-    context 'and the add-on is whitepages' do
+    context 'and the add-on is ekata' do
       context 'and its response indicates success' do
         it 'responds with message' do
-          whitepages = load_json_fixture('successful_whitepages.json')
-          post '/', 'AddOns' => whitepages
+          ekata = load_json_fixture('successful_ekata.json')
+          post '/', 'AddOns' => ekata
           expect(last_response.body).to say('Welcome to the jungle')
         end
       end
 
       context 'and its response contains a failure' do
         it 'responds with message' do
-          whitepages = load_json_fixture('failed_nomorobo.json')
-          post '/', 'AddOns' => whitepages
+          ekata = load_json_fixture('failed_nomorobo.json')
+          post '/', 'AddOns' => ekata
           expect(last_response.body).to say('Welcome to the jungle')
         end
       end
 
       context 'and its response indicates spam' do
         it 'rejects the call' do
-          whitepages = load_json_fixture('spam_whitepages.json')
-          post '/', 'AddOns' => whitepages
+          ekata = load_json_fixture('spam_ekata.json')
+          post '/', 'AddOns' => ekata
           expect(last_response.body).to be_rejected
         end
       end

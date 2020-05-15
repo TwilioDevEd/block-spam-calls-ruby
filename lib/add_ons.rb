@@ -1,6 +1,6 @@
 require_relative 'add_ons/marchex'
 require_relative 'add_ons/nomorobo'
-require_relative 'add_ons/whitepages'
+require_relative 'add_ons/ekata'
 
 class AddOns
   def initialize(add_ons)
@@ -20,7 +20,7 @@ class AddOns
   end
 
   def blocked?
-    [marchex, nomorobo, whitepages].any?(&:blocked?)
+    [marchex, nomorobo, ekata].any?(&:blocked?)
   end
 
   def marchex
@@ -31,7 +31,7 @@ class AddOns
     Nomorobo.new(add_ons.dig('results', 'nomorobo_spamscore'))
   end
 
-  def whitepages
-    Whitepages.new(add_ons.dig('results', 'whitepages_pro_phone_rep'))
+  def ekata
+    Ekata.new(add_ons.dig('results', 'ekata_phone_valid'))
   end
 end
