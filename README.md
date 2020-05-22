@@ -74,9 +74,13 @@ problem](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when
 
 1. Once you have started ngrok, update your [TwiML app's](https://www.twilio.com/console/voice/twiml/apps) Voice URL setting to use your ngrok hostname, so it will look something like this:
 
-```
-http://88b37ada.ngrok.io/
-```
+   ```
+   http://88b37ada.ngrok.io/
+   ```
+
+   Finally, click on `Call` to test your application. See [Create a TwiML App](#create-a-twiml-app) to set the Voice URL.
+
+   ![](images/create-twiml-call-button.png)
 
 That's it!
 
