@@ -52,19 +52,19 @@ Once you've selected the Add-on, just click on `Install` button. Then, you will 
    cd block-spam-calls-ruby
    ```
 
-1. Install dependencies:
+2. Install dependencies:
 
    ```bash
    make install
    ```
 
-1. Run the application (will run on port 9292).
+3. Run the application (will run on port 9292).
 
    ```bash
    make serve
    ```
 
-1. To actually forward incoming calls, your development server will need to be
+4. To actually forward incoming calls, your development server will need to be
 publicly accessible. [We recommend using ngrok to solve this
 problem](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when-testing-webhooks.html).
 
@@ -72,7 +72,7 @@ problem](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when
    ngrok http 9292
    ```
 
-1. Once you have started ngrok, update your [TwiML app's](https://www.twilio.com/console/voice/twiml/apps) Voice URL setting to use your ngrok hostname, so it will look something like this:
+5. Once you have started ngrok, update your [TwiML app's](https://www.twilio.com/console/voice/twiml/apps) Voice URL setting to use your ngrok hostname, so it will look something like this:
 
    ```
    http://88b37ada.ngrok.io/
@@ -84,7 +84,15 @@ problem](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when
 
 That's it!
 
-## Tests
+### Docker
+
+If you have [Docker](https://www.docker.com/) already installed on your machine, you can use our `docker-compose.yml` to setup your project.
+
+1. Make sure you have the project cloned.
+2. Run `docker-compose up`.
+3. Follow the steps in [Local Development](#local-development) on how to expose your port to Twilio using a tool like ngrok and configure the remaining parts of your application.
+
+### Tests
 
 You can run the tests locally by typing
 
