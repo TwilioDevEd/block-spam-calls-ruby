@@ -1,11 +1,11 @@
-require_relative '../../../lib/add_ons/whitepages'
+require_relative '../../../lib/add_ons/ekata'
 
-describe AddOns::Whitepages do
+describe AddOns::Ekata do
   describe '#blocked?' do
     it_behaves_like 'an add-on'
 
     context 'when it has results' do
-      let(:whitepages) do
+      let(:ekata) do
         described_class.new(
           'status' => 'successful',
           'result' => {
@@ -18,7 +18,7 @@ describe AddOns::Whitepages do
         let(:reputation_level) { 4 }
 
         it 'returns true' do
-          expect(whitepages).to be_blocked
+          expect(ekata).to be_blocked
         end
       end
 
@@ -26,7 +26,7 @@ describe AddOns::Whitepages do
         let(:reputation_level) { 2 }
 
         it 'returns false' do
-          expect(whitepages).to_not be_blocked
+          expect(ekata).to_not be_blocked
         end
       end
     end

@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rake'
-gem 'sinatra'
-gem 'twilio-ruby', '~> 5.0.0.rc26'
+gem 'rake', '~> 13.0.1'
+gem 'sinatra', '~> 2.0.8.1'
+gem 'twilio-ruby', '~> 5.33.1'
 
 group :test do
-  gem 'minitest'
-  gem 'nokogiri'
-  gem 'rspec'
-  gem 'rack-test'
+  gem 'minitest', '~> 5.14.0'
+  gem 'nokogiri', '~> 1.10.9'
+  gem 'rack-test', '~> 1.1.0'
+  gem 'rspec', '~> 3.9.0'
 end

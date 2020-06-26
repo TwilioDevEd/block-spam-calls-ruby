@@ -1,23 +1,23 @@
 class AddOns
-  class Whitepages
+  class Ekata
     BAD_REPUTATION = 4
 
-    def initialize(whitepages)
-      @whitepages = whitepages
+    def initialize(ekata)
+      @ekata = ekata
     end
 
     def blocked?
       return false unless successful?
-      result = whitepages['result']
+      result = ekata['result']
       result && result['reputation_level'] == BAD_REPUTATION
     end
 
     private
 
-    attr_reader :whitepages
+    attr_reader :ekata
 
     def successful?
-      whitepages && whitepages['status'] == 'successful'
+      ekata && ekata['status'] == 'successful'
     end
   end
 end
