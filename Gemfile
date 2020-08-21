@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake', '~> 13.0.1'
 gem 'sinatra', '~> 2.0.8.1'
-gem 'twilio-ruby', '~> 5.33.1'
+gem 'twilio-ruby', '~> 5.40.0'
 
 group :test do
   gem 'minitest', '~> 5.14.0'
