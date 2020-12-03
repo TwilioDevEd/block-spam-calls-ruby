@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake', '~> 13.0.1'
-gem 'sinatra', '~> 2.0.8.1'
+gem 'sinatra', '~> 2.1.0'
 gem 'twilio-ruby', '~> 5.44.0'
 
 group :test do
