@@ -7,7 +7,7 @@ GEM
       ruby2_keywords
     jwt (2.2.2)
     mini_portile2 (2.4.0)
-    minitest (5.14.0)
+    minitest (5.14.2)
     multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
@@ -48,7 +48,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  minitest (~> 5.14.0)
+  minitest (~> 5.14.2)
   nokogiri (~> 1.10.9)
   rack-test (~> 1.1.0)
   rake (~> 13.0.1)
