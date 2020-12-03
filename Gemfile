@@ -8,5 +8,5 @@ group :test do
   gem 'minitest', '~> 5.14.2'
   gem 'nokogiri', '~> 1.10.10'
   gem 'rack-test', '~> 1.1.0'
-  gem 'rspec', '~> 3.9.0'
+  gem 'rspec', '~> 3.10.0'
 end
