@@ -6,7 +6,7 @@ gem 'twilio-ruby', '~> 5.45.1'
 
 group :test do
   gem 'minitest', '~> 5.14.3'
-  gem 'nokogiri', '~> 1.11.0'
+  gem 'nokogiri', '~> 1.11.1'
   gem 'rack-test', '~> 1.1.0'
   gem 'rspec', '~> 3.10.0'
 end
